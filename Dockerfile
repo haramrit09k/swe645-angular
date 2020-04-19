@@ -1,9 +1,19 @@
-FROM tomcat:9.0
+FROM node:12.2.0
 
-LABEL maintainer="AjitYadav"
+LABEL authors="Haramrit Singh Khurana, Ajit Yadav"
 
-ADD dist.war /usr/local/tomcat/webapps/
+WORKDIR /angular-app
+ENV PATH /angular-app/node_modules/.bin:$PATH
 
-EXPOSE 8000
+COPY package.json /angular-app/package.json
+RUN npm install
+RUN npm install -g @angular/cli@7.3.9
 
-CMD ["catalina.sh", "run"]
+# add app
+COPY . /angular-app
+
+# start app
+CMD ng serve --host 0.0.0.0
+
+EXPOSE 8080
+EXPOSE 4200
