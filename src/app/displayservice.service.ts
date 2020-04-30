@@ -22,7 +22,7 @@ export class DisplayService {
 
   // jsonUrl = 'http://ec2-3-90-139-158.compute-1.amazonaws.com/jersey-quickstart-webapp/webapi/myresource'
 
-  reqUrl = 'http://ec2-3-90-139-158.compute-1.amazonaws.com/jersey-quickstart-webapp/webapi/myresource';
+  reqUrl = 'http://ec2-3-86-94-214.compute-1.amazonaws.com/jersey-quickstart-webapp/webapi/myresource';
   configUrl = 'assets/testing.json';
 
   constructor(private httpClient: HttpClient) {
