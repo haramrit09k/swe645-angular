@@ -7,7 +7,7 @@ import { FormGroup, ReactiveFormsModule, FormBuilder, FormControl, FormArray, Va
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  SERVER_URL = "http://ec2-3-90-139-158.compute-1.amazonaws.com/jersey-quickstart-webapp/webapi/myresource/create";
+  SERVER_URL = "http://ec2-3-86-94-214.compute-1.amazonaws.com/jersey-quickstart-webapp/webapi/myresource/create";
   uploadForm: FormGroup;  
 
   constructor(private formBuilder: FormBuilder, private httpClient: HttpClient) { 
