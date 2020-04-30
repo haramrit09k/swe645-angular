@@ -8,7 +8,7 @@ import { FormGroup, ReactiveFormsModule, FormBuilder, FormControl, FormArray, Va
 })
 export class FormComponent implements OnInit {
   
-  SERVER_URL = "http://35.236.202.139:8080/jersey-quickstart-webapp/webapi/myresource";
+  SERVER_URL = "http://35.236.202.139:8080/jersey-quickstart-webapp/webapi/myresource/create";
   uploadForm: FormGroup;  
 
   constructor(private formBuilder: FormBuilder, private httpClient: HttpClient) { 
